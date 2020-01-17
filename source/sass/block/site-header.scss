@@ -1,0 +1,10 @@
+.site-header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+@media (max-width: $tablet) {
+  .site-header {
+    padding: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: 8px 19px 5px 17px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: $white-color;
+  border: 1px solid $green-color;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button--black {
+  &:hover,
+  &:focus {
+    color: $green-color;
+    border-color: $dark-gray-color;
+  }
+}
+

@@ -9,17 +9,79 @@
   <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div style="display: none">
   <include src="build/img/sprite.svg"></include>
 </div>
-<div class="wrapper">
-  <header class="site-header">
-
-  </header>
-</div>
+<header class="site-header">
+  <nav class="site-header__navigation navigation navigation--no-js">
+    <div class="container navigation__inner">
+      <div class="logo navigation__logo">
+        <a class="logo__link">
+          <img src="img/logo.png" width="65" height="73" alt="Логотип сайта Organica">
+        </a>
+      </div>
+      <button type="button" class="navigation__toggle" aria-label="Открыть меню">
+        <span class="navigation__toggle-line"></span>
+        <span class="navigation__toggle-line"></span>
+        <span class="navigation__toggle-line"></span>
+      </button>
+      <ul class="menu navigation__menu">
+        <li class="menu__item menu__item--active">
+          <a class="menu__link">
+            Главная
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Портфолио
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Услуги
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="button button--black navigation__call-back">
+        Обратный звонок
+      </a>
+      <div class="lang-switch navigation__lang-switch">
+        <button type="button" class="lang-switch__current" aria-label="Открыть языковую панель">
+          RU
+          <svg width="12" height="5" class="lang-switch__current-icon">
+            <use xlink:href="#icon-arrow-down-triangle"></use>
+          </svg>
+        </button>
+        <ul class="lang-switch__list">
+          <li class="lang-switch__item lang-switch__item--active">
+            <a>
+              RU
+            </a>
+          </li>
+          <li class="lang-switch__item">
+            <a href="#">
+              EN
+            </a>
+          </li>
+          <li class="lang-switch__item">
+            <a href="#">
+              UA
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

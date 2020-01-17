@@ -1,0 +1,140 @@
+.lang-switch {
+  position: relative;
+}
+
+.lang-switch__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.lang-switch__current {
+  position: relative;
+  padding: 7px 23px 7px 7px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.lang-switch__item {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 8px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.lang-switch__item a {
+  font-size: 16px;
+  line-height: 19px;
+  color: $white-color;
+  text-decoration: none;
+
+  &[href]:hover {
+    color: $green-color;
+  }
+
+  &[href]:focus {
+    color: $green-color;
+  }
+}
+
+.lang-switch__current-icon {
+  position: absolute;
+  right: 7px;
+  top: 13px;
+}
+
+.lang-switch__item--active a {
+  color: $dark-gray-color;
+}
+
+@media (min-width: 1170px) {
+  .lang-switch:hover .lang-switch__list {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .lang-switch:hover .lang-switch__current {
+    color: $green-color;
+  }
+
+  .lang-switch:focus-within .lang-switch__current {
+    color: $green-color;
+  }
+
+  .lang-switch:hover .lang-switch__current-icon {
+    transform: rotate(180deg);
+  }
+
+  .lang-switch:focus-within .lang-switch__list {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .lang-switch:focus-within .lang-switch__current-icon {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $tablet) {
+  .lang-switch__list {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    position: static;
+    z-index: 0;
+    pointer-events: initial;
+  }
+
+  .lang-switch__item {
+    padding: 0;
+    margin-right: 20px;
+    margin-top: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .lang-switch__current {
+    display: none;
+  }
+
+  .lang-switch__item a {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .lang-switch__item--active a {
+    color: $dark-green-color;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  .lang-switch--open .lang-switch__list {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .lang-switch--open .lang-switch__current-icon {
+    transform: rotate(180deg);
+  }
+}

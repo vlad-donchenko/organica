@@ -15,14 +15,21 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-width: 320px;
   font-family: $base-font-family;
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: 400;
   color: $white-color;
   background-color: $black-color;
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 img {
