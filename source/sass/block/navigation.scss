@@ -125,6 +125,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 142px;
+    min-height: 100%;
   }
 
   .navigation--no-js .navigation__toggle {
@@ -178,7 +179,7 @@
   }
 
   .navigation__lang-switch {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 }
 
