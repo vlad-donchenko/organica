@@ -137,4 +137,8 @@
   .lang-switch--open .lang-switch__current-icon {
     transform: rotate(180deg);
   }
+
+  .lang-switch--open .lang-switch__current {
+    color: $green-color;
+  }
 }
