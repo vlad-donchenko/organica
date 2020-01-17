@@ -112,7 +112,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    padding-bottom: 142px;
     background-color: $lite-black-color;
     overflow-y: auto;
   }
@@ -120,6 +119,10 @@
   .navigation--no-js {
     height: 100vh;
     padding-bottom: 143px;
+  }
+
+  .navigation--open .navigation__inner {
+    padding-bottom: 142px;
   }
 
   .navigation--no-js .navigation__toggle {
@@ -164,7 +167,7 @@
 }
 
 @media (max-width: $mobile-vertical) {
-  .navigation--open {
+  .navigation--open .navigation__inner {
     padding-bottom: 50px;
   }
 
