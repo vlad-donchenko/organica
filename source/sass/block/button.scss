@@ -21,3 +21,17 @@
   }
 }
 
+.button--green {
+  font-size: 14px;
+  padding: 10.5px 52px;
+  background-color: $green-color;
+  color: $black-color;
+  border-color: $green-color;
+
+  &:hover,
+  &:focus {
+    background-color: $white-color;
+    border-color: $white-color;
+  }
+}
+
