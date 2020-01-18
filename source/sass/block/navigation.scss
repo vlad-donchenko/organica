@@ -109,11 +109,12 @@
     position: absolute;
     left: 0;
     top: 0;
+    padding-bottom: 0;
     width: 100%;
     height: 100%;
     background-color: $lite-black-color;
     overflow-y: auto;
-    padding-bottom: 0;
+    z-index: 5;
   }
 
   .navigation--no-js {
