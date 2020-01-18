@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social__link,
+.social__link svg {
+  display: block;
+}
+
+.social__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.social__item {
+  margin-right: 42px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
