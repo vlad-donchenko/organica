@@ -5,7 +5,6 @@
 }
 
 .navigation__call-back {
-  display: none;
   max-width: 172px;
   margin-top: 18px;
   margin-left: 48px;
@@ -79,6 +78,7 @@
   }
 
   .navigation__call-back {
+    display: none;
     order: 1;
     margin: auto auto 0 auto;
     padding: 11px 16px;
