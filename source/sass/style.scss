@@ -1,8 +1,10 @@
 @import "global/normalize";
+@import "../libs/slick/slick";
 @import "global/fonts";
 @import "global/variables";
 @import "global/mixin";
 @import "global/global";
+@import "plugins/slick";
 @import "block/site-header";
 @import "block/container";
 @import "block/button";
@@ -16,3 +18,5 @@
 @import "block/h2";
 @import "block/promo";
 @import "block/numbers";
+@import "block/visually-hidden";
+@import "block/work-slider";
