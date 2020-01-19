@@ -1,5 +1,5 @@
 @mixin animation($animation-name) {
-  animation-duration: 0.55s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-timing-function: ease;
   animation-name: $animation-name;
@@ -7,6 +7,6 @@
 
 @mixin transition($transition-property) {
   transition-property: $transition-property;
-  transition-duration: 0.55s;
+  transition-duration: 0.5s;
   transition-timing-function: ease;
 }

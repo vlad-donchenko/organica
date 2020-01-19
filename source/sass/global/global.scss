@@ -40,3 +40,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@keyframes bounce-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+
+  0% {
+    opacity: 0.5;
+    transform: translateX(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
