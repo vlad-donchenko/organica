@@ -32,6 +32,15 @@
 
 .promo__numbers {
   margin-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.promo__numbers .numbers__item {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: $tablet-large) {
