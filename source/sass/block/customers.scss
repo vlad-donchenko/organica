@@ -1,0 +1,151 @@
+.customers {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 53px;
+  padding-bottom: 134px;
+  background-color: $black-color;
+  background-image: url("../img/customer-background-desktop--@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black-color, 0.7);
+    z-index: -1;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/customer-background-desktop--@2x.jpg");
+  }
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 755px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.customers__title {
+  margin-top: 0;
+  margin-bottom: 91px;
+  text-align: center;
+}
+
+.customers__item {
+  margin-top: 58px;
+  max-width: 16.66%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-top: 0;
+  }
+}
+
+.customers__item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customers__load-more {
+  margin-top: 33px;
+  display: none;
+}
+
+@media (max-width: $tablet-large) {
+  .customers__list {
+    max-width: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .customers__item {
+    max-width: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:nth-child(6) {
+      margin-top: 58px;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .customers {
+    padding-bottom: 105px;
+  }
+
+  .customers__item {
+    max-width: 25%;
+
+    &:nth-child(5) {
+      margin-top: 58px;
+    }
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .customers {
+    padding-bottom: 105px;
+  }
+
+  .customers__item {
+    max-width: 33.33%;
+
+    &:nth-child(4) {
+      margin-top: 58px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .customers {
+    margin-top: 65px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .customers__title {
+    margin-bottom: 80px;
+  }
+
+  .customers__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .customers__item {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 58px;
+    }
+  }
+
+  .customers__load-more {
+    display: inline-block;
+    width: 100%;
+  }
+}
