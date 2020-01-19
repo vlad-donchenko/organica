@@ -1,0 +1,53 @@
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0 -8px;
+  list-style: none;
+}
+
+.portfolio__item {
+  padding-left: 8px;
+  padding-right: 8px;
+  max-width: 33.33%;
+  width: 100%;
+}
+
+.portfolio__card {
+  position: relative;
+}
+
+.portfolio__card-name {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.portfolio__type {
+  display: inline-block;
+  margin: 0;
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.26em;
+  text-align: center;
+  color: #3f3d3d;
+  background-color: $dark-green-color;
+}
+
+.portfolio__card-info {
+  padding: 28px 42px;
+  text-align: center;
+  background-color: $lite-black-color;
+}
+
+.portfolio__card-link {
+  font-size: 14px;
+  padding: 8px 29px;
+}
