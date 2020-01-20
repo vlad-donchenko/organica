@@ -1,0 +1,41 @@
+.slider-arrows {
+  position: relative;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid $dark-green-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $dark-gray-color;
+  }
+}
+
+.slider-arrows__icon {
+  position: absolute;
+  top: 7px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid $white-color;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}
+
+.slider-arrows__icon--next {
+  right: 9px;
+}
+
+.slider-arrows__icon--prev {
+  left: 9px;
+  transform: rotate(-135deg);
+}
+
+.slider-arrows:hover .slider-arrows__icon,
+.slider-arrows:focus .slider-arrows__icon {
+  border-color: $dark-green-color;
+}
