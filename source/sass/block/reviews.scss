@@ -90,6 +90,10 @@
 }
 
 @media (max-width: $mobile-vertical) {
+  .reviews {
+    margin-bottom: 0;
+  }
+
   .reviews__slider-wrapper {
     padding-bottom: 55px;
   }
@@ -103,7 +107,7 @@
   .reviews__slider-wrapper {
     padding-left: 40px;
     padding-right: 40px;
-    
+
     &::after {
       width: 95%;
     }

@@ -624,6 +624,49 @@
       </div>
     </div>
   </section>
+  <section class="question question--mobile-visible">
+    <div class="container question__inner">
+      <h2 class="h2 h2--light question__title">
+        Остались
+        вопросы?
+      </h2>
+      <div class="question__form">
+        <form action="question.php" method="post">
+          <div class="question__form-wrapper">
+            <div class="question__form-item">
+              <label class="form-control">
+                <span class="visually-hidden">
+                  Ф.И.О
+                </span>
+                <input type="text" class="form-control__input" name="question_name" placeholder="Ф.И.О" required>
+              </label>
+            </div>
+            <div class="question__form-item">
+              <label class="form-control">
+                <span class="visually-hidden">
+                  Номер телефона
+                </span>
+                <input type="tel" class="form-control__input" name="question_phone" placeholder="Номер телефона" required>
+              </label>
+            </div>
+            <div class="question__form-item">
+              <label class="form-control">
+                <span class="visually-hidden">
+                  Ваш вопрос
+                </span>
+                <textarea name="question_text" class="form-control__input form-control__input--textarea" placeholder="Ваш вопрос"></textarea>
+              </label>
+            </div>
+            <div class="question__form-item question__form-item--submit">
+              <button type="submit" class="button button--black question__submit">
+                Заказать обратный звонок
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="site-footer__inner container">

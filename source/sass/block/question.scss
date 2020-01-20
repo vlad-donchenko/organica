@@ -1,0 +1,36 @@
+.question {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.question__title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.question__submit {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+}
+
+.question--mobile-visible {
+  display: none;
+}
+
+@media (max-width: $mobile-vertical) {
+  .question--mobile-visible {
+    display: block;
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .question--mobile-visible {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+}
+
