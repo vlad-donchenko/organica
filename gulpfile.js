@@ -58,7 +58,7 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      //imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 });
@@ -101,9 +101,11 @@ gulp.task("js-min", function () {
   return gulp.src([
     "source/libs/jquery/jquery-3.3.1.min.js",
     "source/libs/slick/slick.js",
+    "source/libs/lazzyload/lazyload.min.js",
     "source/js/header.js",
     "source/js/modal.js",
-    "source/js/sliders.js"
+    "source/js/sliders.js",
+    "source/js/index.js"
   ])
     .pipe(concat("scripts.min.js"))
     //.pipe(jsmin())

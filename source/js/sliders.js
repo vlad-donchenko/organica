@@ -6,6 +6,7 @@
 
   if (workSlider) {
     workSlider.slick({
+      lazyLoad: 'ondemand',
       dots: true,
       arrows: false,
       infinite: true,
