@@ -1,0 +1,63 @@
+.special-offer--portfolio-page {
+  margin-top: 33px;
+}
+
+.special-offer__info-block {
+  display: flex;
+  align-items: flex-start;
+  padding: 29px 49px;
+  background-color: $lite-black-color;
+}
+
+.special-offer__description {
+  margin: 0;
+  max-width: 515px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $white-color;
+}
+
+.special-offer__description span {
+  color: $dark-green-color;
+}
+
+.special-offer__brief {
+  margin-left: auto;
+  padding: 11.5px 55px;
+  font-size: 14px;
+}
+
+@media (max-width: $tablet) {
+  .special-offer__info-block {
+    align-items: center;
+  }
+
+  .special-offer__description {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .special-offer__info-block {
+    padding: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .special-offer__description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .special-offer__brief {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .special-offer__brief {
+    width: 100%;
+  }
+}
