@@ -2,6 +2,11 @@
   margin-top: 100px;
 }
 
+.portfolio--portfolio-page {
+  margin-top: 50px;
+  margin-bottom: 164px;
+}
+
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +130,10 @@
       margin-top: 16px;
     }
   }
+
+  .portfolio--portfolio-page {
+    margin-bottom: 85px;
+  }
 }
 
 @media (max-width: $mobile) {
@@ -149,5 +158,10 @@
 
   .portfolio {
     margin-top: 65px;
+  }
+
+  .portfolio--portfolio-page {
+    margin-top: 50px;
+    margin-bottom: 65px;
   }
 }
