@@ -68,3 +68,317 @@
   line-height: 42px;
   color: $white-color;
 }
+
+.about-project__step-score {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+  color: $dark-gray-color;
+
+  &::after {
+    content: "—";
+  }
+}
+
+.about-project__step-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+  color: $white-color;
+}
+
+.about-project__item-description {
+  font-size: 14px;
+  line-height: 16px;
+
+  *:first-child {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-project__details-item {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark-gray-color;
+}
+
+.about-project__details {
+  margin: 26px 0 0 0;
+}
+
+.about-project__list {
+  margin-top: 8px;
+}
+
+.about-project__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.about-project__item--problem .about-project__step {
+  max-width: 215px;
+  width: 100%;
+}
+
+.about-project__item--problem .about-project__item-description {
+  padding-top: 2px;
+  max-width: 575px;
+  margin-left: 67px;
+}
+
+.about-project__item-img img {
+  display: block;
+}
+
+.about-project__item--problem .about-project__item-img {
+  margin-top: 48px;
+  width: 100%;
+}
+
+.about-project__item--solutions .about-project__item-description {
+  padding-top: 90px;
+  max-width: 444px;
+  width: 100%;
+}
+
+.about-project__item--solutions .about-project__item-img {
+  max-width: 542px;
+  width: 1005px;
+  margin-left: auto;
+}
+
+.about-project__item--solutions {
+  position: relative;
+}
+
+.about-project__item--solutions .about-project__step {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 444px;
+}
+
+.about-project__item--result .about-project__item-img {
+  order: -1;
+  width: 100%;
+}
+
+.about-project__item--result .about-project__item-description {
+  margin-left: 53px;
+  margin-top: 50px;
+  max-width: 575px;
+  width: 100%;
+}
+
+.about-project__item--result .about-project__step {
+  margin-top: 50px;
+  max-width: 215px;
+  width: 100%;
+}
+
+.about-project__item--images {
+  justify-content: space-between;
+}
+
+.about-project__item--images .about-project__item-img {
+  max-width: 542px;
+}
+
+@media (max-width: $tablet-large) {
+  .about-project__name {
+    max-width: 425px;
+  }
+
+  .about-project__item--problem .about-project__item-description {
+    margin-left: 56px;
+  }
+
+  .about-project__item--solutions .about-project__item-img {
+    max-width: 460px;
+  }
+
+  .about-project__item--solutions .about-project__item-description,
+  .about-project__item--solutions .about-project__step {
+    max-width: 450px;
+  }
+
+  .about-project__item--solutions .about-project__item-description {
+    padding-top: 81px;
+  }
+
+  .about-project__item--images .about-project__item-img {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about-project__name {
+    margin-top: 50px;
+    transform: none;
+    max-width: 550px;
+  }
+
+  .about-project {
+    margin-top: 25px;
+  }
+
+  .about-project__list {
+    margin-top: 30px;
+  }
+
+  .about-project__item-description {
+    margin: 30px 0 0 0;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .about-project__item-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-project__step {
+    max-width: 100%;
+    order: -1;
+  }
+
+  .about-project__item--solutions .about-project__step {
+    position: static;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .about-project__item--images .about-project__item-img {
+    max-width: 354px;
+  }
+
+  .about-project__item--problem .about-project__item-description {
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-project__details {
+    margin-top: 15px;
+  }
+
+  .about-project__item--problem .about-project__item-img {
+    margin-top: 24px;
+  }
+
+  .about-project__item--solutions .about-project__item-img {
+    max-width: 100%;
+  }
+
+  .about-project__item--solutions .about-project__item-img img {
+    width: 100%;
+  }
+
+  .about-project__item--solutions .about-project__item-description {
+    padding-top: 0;
+    margin-top: 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-project__item--result .about-project__step {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .about-project__item--result .about-project__item-description {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .about-project__item--problem .about-project__step {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-project__item--problem .about-project__step__inner {
+    max-width: 300px;
+  }
+
+  .about-project__item--problem .about-project__details {
+    margin-top: 0;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .about-project__item--images .about-project__item-img {
+    max-width: 100%;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-project__item--problem .about-project__step__inner {
+    max-width: 40%;
+  }
+
+  .about-project__item--problem .about-project__details {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about-project__arrow span {
+    display: none;
+  }
+
+  .about-project__name {
+    margin-top: 35px;
+  }
+
+  .about-project__item {
+    margin-top: 25px;
+  }
+
+  .about-project__item--images .about-project__item-img {
+    margin-bottom: 25px;
+  }
+
+  .about-project__item--problem .about-project__step__inner {
+    max-width: 35%;
+  }
+
+  .about-project__item--problem .about-project__details {
+    max-width: 45%;
+  }
+
+  .about-project__item-description,
+  .about-project__item--solutions .about-project__item-description,
+  .about-project__item--result .about-project__item-description {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: $iphone-small) {
+  .about-project__main-title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}

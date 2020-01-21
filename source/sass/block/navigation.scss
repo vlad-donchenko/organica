@@ -193,6 +193,11 @@
 }
 
 @media (max-width: $mobile) {
+  .navigation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .navigation__menu {
     align-items: flex-start;
   }
