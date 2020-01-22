@@ -107,6 +107,14 @@
   font-size: 16px;
 }
 
+.portfolio--load-more-visible .portfolio__load-more {
+  display: block;
+  min-width: 273px;
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: $tablet-large) {
   .portfolio__card:hover .portfolio__card-info {
     animation: none;
