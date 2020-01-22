@@ -109,7 +109,8 @@
 
 .portfolio--load-more-visible .portfolio__load-more {
   display: block;
-  min-width: 273px;
+  max-width: 273px;
+  width: 100%;
   margin-top: 33px;
   margin-left: auto;
   margin-right: auto;
@@ -162,6 +163,10 @@
     padding-top: 13px;
     padding-bottom: 13px;
     width: 100%;
+  }
+
+  .portfolio--load-more-visible .portfolio__load-more {
+    max-width: 100%;
   }
 
   .portfolio {
