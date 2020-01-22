@@ -1,0 +1,38 @@
+.about-service {
+  margin-top: 64px;
+}
+
+.about-service__page-name-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.about-service__page-name-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.about-service__numbers {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-service__numbers .numbers__item {
+  max-width: 25%;
+}
+
+.about-service__numbers .numbers__value {
+  text-align: left;
+}
+
+.about-service__numbers .numbers__text {
+  text-align: left;
+}
