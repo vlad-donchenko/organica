@@ -5,4 +5,11 @@
 
 .logo__link {
   display: block;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
 }
