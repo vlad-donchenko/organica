@@ -6,16 +6,24 @@
   list-style: none;
 }
 
-.social__link,
 .social__link svg {
-  display: block;
+  fill: $white-color;
 }
 
 .social__link {
+  color: $white-color;
+
   &:hover,
   &:focus {
-    opacity: 0.6;
+    svg {
+      fill: $dark-green-color;
+    }
   }
+}
+
+.social__link,
+.social__link svg {
+  display: block;
 }
 
 .social__item {

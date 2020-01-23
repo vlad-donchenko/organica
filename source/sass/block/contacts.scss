@@ -1,0 +1,192 @@
+.contacts {
+  margin-top: 111px;
+}
+
+.contacts__inner {
+  display: flex;
+}
+
+.contacts__info-block {
+  padding-top: 43px;
+  max-width: 457px;
+  width: 100%;
+}
+
+.contacts__form {
+  margin-left: auto;
+  padding: 42px 60px;
+  max-width: 578px;
+  width: 100%;
+  border: 1px solid $lite-brown-color;
+}
+
+.contacts__info-block-title {
+  margin-top: 0;
+  margin-bottom: 49px;
+}
+
+.contacts__info-block-item {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $brown-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__info-block-link {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  text-decoration: none;
+  color: $white-color;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 30px;
+    width: 0;
+    height: 1px;
+    background-color: $dark-green-color;
+
+    @include transition(width);
+  }
+
+  &:hover {
+    &::after {
+      width: calc(100% - 30px);
+    }
+  }
+}
+
+.contacts__info-block-link svg {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.contacts__social {
+  margin-top: 142px;
+}
+
+.contacts__social h2 {
+  margin-top: 0;
+  margin-bottom: 49px;
+}
+
+.contacts__form .contacts__form-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__info-block-description {
+  margin-right: 7px;
+}
+
+.contacts__form-item {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contacts__form-item--textarea {
+  margin-top: 50px;
+}
+
+.contacts__form-item--text p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: $brown-color;
+}
+
+.contacts__form-submit {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+@media (max-width: $tablet-large) {
+  .contacts__form {
+    padding: 30px;
+    max-width: 450px;
+  }
+
+  .contacts__info-block-item {
+    font-size: 16px;
+  }
+
+  .contacts__info-block {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .contacts {
+    margin-top: 30px;
+  }
+
+  .contacts__info-block {
+    max-width: 340px;
+  }
+
+  .contacts__form {
+    max-width: 388px;
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .contacts__inner {
+    flex-wrap: wrap;
+  }
+
+  .contacts__info-block {
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  .contacts__form {
+    margin-top: 65px;
+    max-width: 100%;
+  }
+
+  .contacts__social {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .contacts__social .h2 {
+    margin-bottom: 25px;
+  }
+
+  .contacts__info-block-title {
+    margin-bottom: 25px;
+  }
+
+  .contacts__social .h2,
+  .contacts__form-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: $iphone-small) {
+  .contacts__info-block-description {
+    display: block;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  .contacts__form {
+    padding: 20px;
+  }
+}
