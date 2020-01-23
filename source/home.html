@@ -796,6 +796,39 @@
     </div>
   </div>
 </footer>
+<section class="modal modal--call-back" id="modal_call_back">
+  <div class="modal__content">
+    <button type="button" aria-label="Закрыть модальное окно"></button>
+    <h2 class="modal__title">
+      Заказать обратный звонок
+    </h2>
+    <div class="modal__form">
+      <form action="modal_call_back.php" method="post">
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Ф.И.О
+            </span>
+            <input type="text" class="form-control__input" name="question_name" placeholder="Ф.И.О" required="">
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Номер телефона
+            </span>
+            <input type="tel" class="form-control__input" name="question_phone" placeholder="Номер телефона" required="">
+          </label>
+        </div>
+        <div class="modal__form-item modal__form-item--submit">
+          <button type="submit" class="button button--black">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
