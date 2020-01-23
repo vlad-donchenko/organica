@@ -73,3 +73,43 @@
 .how-work__card-img {
   margin-left: 22px;
 }
+
+@media (max-width: $mobile-vertical) {
+  .how-work__list::before {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .how-work {
+    margin-top: 65px;
+  }
+
+  .how-work__item {
+    padding-left: 0;
+    margin-top: 45px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      margin-top: 45px;
+    }
+  }
+
+  .how-work__list {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .how-work__card-img {
+    margin: 0;
+  }
+}

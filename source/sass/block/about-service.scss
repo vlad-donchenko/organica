@@ -19,14 +19,23 @@
 }
 
 .about-service__numbers {
-  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
   margin-top: 50px;
   padding-left: 0;
   padding-right: 0;
 }
 
 .about-service__numbers .numbers__item {
+  margin-top: 30px;
   max-width: 25%;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-top: 0;
+  }
 }
 
 .about-service__numbers .numbers__value {
@@ -46,7 +55,8 @@
   list-style: none;
 }
 
-.about-service_images-item {
+.about-service__images-item {
+  width: 50%;
   margin-top: 8px;
   padding-left: 4px;
   padding-right: 4px;
@@ -55,6 +65,10 @@
   &:nth-child(2) {
     margin-top: 0;
   }
+}
+
+.about-service__images-item img {
+  display: block;
 }
 
 .about-service__description {
@@ -68,7 +82,7 @@
 }
 
 .about-service__description .about-service__description-image {
-  max-width: 454px;
+  max-width: 570px;
   width: 100%;
   margin-left: auto;
 }
@@ -76,11 +90,9 @@
 .about-service__actions {
   position: relative;
   max-width: 563px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin: 45px auto 0 auto;
   padding-top: 18px;
   text-align: center;
 
@@ -109,4 +121,110 @@
 .about-service__action-portfolio {
   width: 100%;
   max-width: 273px;
+}
+
+@media (max-width: $tablet-large) {
+  .about-service__description .about-service__description-image {
+    max-width: 479.5px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about-service__description .about-service__description-image {
+    max-width: 360px;
+  }
+
+  .about-service__description .content {
+    max-width: 340px;
+  }
+
+  .about-service {
+    margin-top: 30px;
+  }
+
+  .about-service__numbers {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .about-service__numbers .numbers__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-vertical) {
+  .about-service__numbers .numbers__item {
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .about-service_images {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-service__images-item {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:nth-child(2) {
+      margin-top: 8px;
+    }
+  }
+
+  .about-service__description {
+    flex-wrap: wrap;
+  }
+
+  .about-service__description .content {
+    max-width: 100%;
+    width: 100%;
+    order: 1;
+  }
+
+  .about-service__description .about-service__description-image {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about-service__page-name-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .about-service__numbers {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .about-service__numbers .numbers__value {
+    text-align: center;
+  }
+
+  .about-service__numbers .numbers__text {
+    text-align: center;
+  }
+
+  .about-service__action-portfolio {
+    display: none;
+  }
+
+  .about-service__actions {
+    padding-top: 0;
+    margin-top: 15px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-service__action-brief {
+    width: 100%;
+    max-width: 100%;
+  }
 }

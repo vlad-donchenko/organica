@@ -1,6 +1,5 @@
 .question {
   margin-top: 65px;
-  margin-bottom: 65px;
 }
 
 .question__title {
@@ -23,14 +22,12 @@
   .question--mobile-visible {
     display: block;
     margin-top: 85px;
-    margin-bottom: 85px;
   }
 }
 
 @media (max-width: $mobile) {
   .question--mobile-visible {
     margin-top: 65px;
-    margin-bottom: 65px;
   }
 }
 
