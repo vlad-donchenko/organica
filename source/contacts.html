@@ -52,7 +52,7 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="button button--black navigation__call-back">
+      <a href="#" class="button button--black button--modal navigation__call-back" data-modal="modal_call_back">
         Обратный звонок
       </a>
       <div class="lang-switch navigation__lang-switch">
@@ -159,7 +159,7 @@
                 <span class="visually-hidden">
                   Ф.И.О
                 </span>
-              <input type="text" class="form-control__input" name="question_name" placeholder="Ф.И.О" required>
+              <input type="text" class="form-control__input" name="contacts_call_back_name" placeholder="Ф.И.О" required>
             </label>
           </div>
           <div class="contacts__form-item">
@@ -167,7 +167,7 @@
                 <span class="visually-hidden">
                   Номер телефона
                 </span>
-              <input type="tel" class="form-control__input" name="question_phone" placeholder="Номер телефона" required>
+              <input type="tel" class="form-control__input" name="contacts_call_back_phone" placeholder="Номер телефона" required>
             </label>
           </div>
           <div class="contacts__form-item">
@@ -175,7 +175,7 @@
                 <span class="visually-hidden">
                   Почта
                 </span>
-              <input type="email" class="form-control__input" name="question_email" placeholder="Электронная почта">
+              <input type="email" class="form-control__input" name="contacts_call_back_email" placeholder="Электронная почта">
             </label>
           </div>
           <div class="contacts__form-item contacts__form-item--textarea">
@@ -183,7 +183,7 @@
                 <span class="visually-hidden">
                   Ваш вопрос
                 </span>
-              <textarea name="question_text" class="form-control__input form-control__input--textarea" placeholder="Ваш вопрос"></textarea>
+              <textarea name="contacts_call_back_text" class="form-control__input form-control__input--textarea" placeholder="Ваш вопрос"></textarea>
             </label>
           </div>
           <div class="contacts__form-item contacts__form-item--text">
@@ -247,7 +247,7 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="button button--black site-footer__brief">
+      <a href="#" class="button button--black button--modal site-footer__brief" data-modal="modal_call_brief">
         Заполнить бриф
       </a>
     </div>
@@ -327,7 +327,7 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="button button--black site-footer__brief">
+      <a href="#" class="button button--black button--modal site-footer__brief" data-modal="modal_call_brief">
         Заполнить бриф
       </a>
     </div>
@@ -338,6 +338,126 @@
     </div>
   </div>
 </footer>
+<section class="modal modal--call-back" id="modal_call_back">
+  <div class="modal__content">
+    <button type="button" class="modal_close" aria-label="Закрыть модальное окно"></button>
+    <h2 class="h2 h2--light modal__title">
+      Заказать обратный звонок
+    </h2>
+    <div class="modal__form">
+      <form action="modal_call_back.php" method="post">
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Ф.И.О
+            </span>
+            <input type="text" class="form-control__input" name="question_name" placeholder="Ф.И.О" required="">
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Номер телефона
+            </span>
+            <input type="tel" class="form-control__input" name="question_phone" placeholder="Номер телефона"
+                   required="">
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <button type="submit" class="button button--black modal__submit">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="modal modal--brief" id="modal_call_brief">
+  <div class="modal__content">
+    <button type="button" class="modal_close" aria-label="Закрыть модальное окно"></button>
+    <h2 class="h2 h2--light modal__title">
+      Бриф
+    </h2>
+    <p class="modal__text">
+      Ответьте на несколько вопросов для быстрой
+      <br>
+      обработки вашего запроса
+    </p>
+    <div class="modal__form">
+      <form action="modal_brief.php" method="post">
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Ф.И.О
+            </span>
+            <input type="text" class="form-control__input" name="brief_name" placeholder="Ф.И.О" required>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Номер телефона
+            </span>
+            <input type="tel" class="form-control__input" name="brief_phone" placeholder="Номер телефона" required>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Сфера деятельности
+            </span>
+            <input type="text" class="form-control__input" name="brief_activity" placeholder="Сфера деятельности">
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control" for="service_type">
+            <span class="visually-hidden">
+              Тип услуги
+            </span>
+          </label>
+          <select name="brief_type_service" class="form-control__select custom-select" id="service_type">
+            <option value="service_type" selected>
+              Тип услуги
+            </option>
+            <option value="corporate_identity">
+              Фирменный стиль
+            </option>
+            <option value="logo">
+              Логотип
+            </option>
+            <option value="smm_promotion">
+              SMM продвижение
+            </option>
+            <option value="advertising_video">
+              Рекламное видео
+            </option>
+          </select>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Сфера деятельности
+            </span>
+            <textarea class="form-control__input form-control__input--textarea" name="brief_example_work" placeholder="Примеры работ, которые вам нравятся"></textarea>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Дополнительное описание
+            </span>
+            <textarea class="form-control__input form-control__input--textarea" name="brief_example_description" placeholder="Дополнительное описание"></textarea>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <button type="submit" class="button button--black modal__submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

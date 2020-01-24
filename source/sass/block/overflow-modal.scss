@@ -1,0 +1,10 @@
+.overflow-modal {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+@media (max-width: $tablet-large) {
+  .overflow-modal {
+    padding-right: 0;
+  }
+}

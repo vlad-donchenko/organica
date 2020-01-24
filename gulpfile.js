@@ -102,6 +102,7 @@ gulp.task("js-min", function () {
     "source/libs/jquery/jquery-3.3.1.min.js",
     "source/libs/slick/slick.js",
     "source/libs/lazzyload/lazyload.min.js",
+    "source/libs/select2/select2.min.js",
     "source/js/header.js",
     "source/js/modal.js",
     "source/js/sliders.js",

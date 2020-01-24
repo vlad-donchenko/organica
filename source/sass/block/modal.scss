@@ -1,0 +1,136 @@
+.modal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  background-color: rgba($black-color, 0.7);
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal--open {
+  display: flex;
+}
+
+.modal--open .modal__content {
+  @include animation(bounce-left);
+}
+
+.modal__text {
+  margin: 12px 0;
+  color: $brown-color;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.modal__content {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background-color: $black-color;
+  padding: 59px 170px;
+  border: 1px solid $white-color;
+}
+
+.modal--call-back .modal__content {
+  max-width: 660px;
+  width: 100%;
+  padding: 59px 170px;
+}
+
+.modal__title {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 21px;
+    background-color: $white-color;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: $dark-green-color;
+    }
+  }
+}
+
+.modal__form-item {
+  margin-top: 49px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.modal__submit {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.modal--brief .modal__content {
+  max-width: 830px;
+}
+
+.modal--brief .modal__title {
+  margin-bottom: 12px;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.modal--brief .modal__form {
+  margin-top: 40px;
+}
+
+@media (max-width: $mobile-vertical) {
+  .modal--call-back .modal__content,
+  .modal__content {
+    max-width: 450px;
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .modal--call-back .modal__content,
+  .modal__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

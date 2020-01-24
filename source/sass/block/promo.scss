@@ -41,6 +41,13 @@
 .promo__numbers .numbers__item {
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 15px;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: $tablet-large) {
