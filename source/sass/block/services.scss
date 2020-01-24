@@ -18,6 +18,7 @@
 
 .services__item {
   max-width: 25%;
+  flex-basis: 25%;
   width: 100%;
 }
 
@@ -33,7 +34,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  fill: #a9a9a9a9;
+  fill: $brown-color;
 
   @include transition(fill);
 }
@@ -171,6 +172,7 @@
 @media (max-width: $tablet) {
   .services__item {
     max-width: 33.33%;
+    flex-basis: 33.33%;
 
 
     &:nth-child(4) {
@@ -194,6 +196,7 @@
 @media (max-width: $mobile-vertical) {
   .services__item {
     max-width: 50%;
+    flex-basis: 50%;
 
 
     &:nth-child(3) {
@@ -221,6 +224,7 @@
 @media (max-width: $mobile) {
   .services__item {
     max-width: 100%;
+    flex-basis: 100%;
 
 
     &:nth-child(2) {

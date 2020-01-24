@@ -29,6 +29,7 @@
 .about-service__numbers .numbers__item {
   margin-top: 30px;
   max-width: 25%;
+  flex-basis: 25%;
 
   &:nth-child(1),
   &:nth-child(2),
@@ -156,6 +157,7 @@
 @media (max-width: $mobile-vertical) {
   .about-service__numbers .numbers__item {
     width: 50%;
+    flex-basis: 50%;
     max-width: 100%;
 
     &:nth-child(3),

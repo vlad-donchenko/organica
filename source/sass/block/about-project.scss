@@ -130,12 +130,14 @@
 
 .about-project__item--problem .about-project__step {
   max-width: 215px;
+  flex-basis: 215px;
   width: 100%;
 }
 
 .about-project__item--problem .about-project__item-description {
   padding-top: 2px;
   max-width: 575px;
+  flex-basis: 575px;
   margin-left: 67px;
 }
 
@@ -151,12 +153,14 @@
 .about-project__item--solutions .about-project__item-description {
   padding-top: 90px;
   max-width: 444px;
+  flex-basis: 444px;
   width: 100%;
 }
 
 .about-project__item--solutions .about-project__item-img {
   max-width: 542px;
-  width: 1005px;
+  width: 100%;
+  flex-basis: 542px;
   margin-left: auto;
 }
 
@@ -181,12 +185,14 @@
   margin-left: 53px;
   margin-top: 50px;
   max-width: 575px;
+  flex-basis: 575px;
   width: 100%;
 }
 
 .about-project__item--result .about-project__step {
   margin-top: 50px;
   max-width: 215px;
+  flex-basis: 215px;
   width: 100%;
 }
 
@@ -196,6 +202,7 @@
 
 .about-project__item--images .about-project__item-img {
   max-width: 542px;
+  flex-basis: 542px;
 }
 
 @media (max-width: $tablet-large) {
@@ -209,11 +216,13 @@
 
   .about-project__item--solutions .about-project__item-img {
     max-width: 460px;
+    flex-basis: 460px;
   }
 
   .about-project__item--solutions .about-project__item-description,
   .about-project__item--solutions .about-project__step {
     max-width: 450px;
+    flex-basis: 450px;
   }
 
   .about-project__item--solutions .about-project__item-description {
@@ -222,6 +231,7 @@
 
   .about-project__item--images .about-project__item-img {
     max-width: 460px;
+    flex-basis: 460px;
   }
 }
 
@@ -264,6 +274,7 @@
 
   .about-project__item--images .about-project__item-img {
     max-width: 354px;
+    flex-basis: 354px;
   }
 
   .about-project__item--problem .about-project__item-description {
@@ -271,6 +282,7 @@
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
+    flex-basis: 100%;
     width: 100%;
   }
 
@@ -284,6 +296,7 @@
 
   .about-project__item--solutions .about-project__item-img {
     max-width: 100%;
+    flex-basis: 100%;
   }
 
   .about-project__item--solutions .about-project__item-img img {
@@ -294,10 +307,12 @@
     padding-top: 0;
     margin-top: 30px;
     max-width: 100%;
+    flex-basis: 100%;
     width: 100%;
   }
 
   .about-project__item--result .about-project__step {
+    flex-basis: 100%;
     margin-top: 0;
     margin-bottom: 24px;
   }
@@ -305,12 +320,14 @@
   .about-project__item--result .about-project__item-description {
     max-width: 100%;
     width: 100%;
+    flex-basis: 100%;
     margin-top: 30px;
     margin-left: 0;
   }
 
   .about-project__item--problem .about-project__step {
     max-width: 100%;
+    flex-basis: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -328,6 +345,7 @@
 @media (max-width: $mobile-vertical) {
   .about-project__item--images .about-project__item-img {
     max-width: 100%;
+    flex-basis: 100%;
     margin-bottom: 50px;
 
     &:last-child {

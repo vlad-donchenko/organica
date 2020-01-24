@@ -45,6 +45,7 @@
 .customers__item {
   margin-top: 58px;
   max-width: 16.66%;
+  flex-basis: 16.66%;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -79,6 +80,7 @@
 
   .customers__item {
     max-width: 20%;
+    flex-basis: 20%;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -95,6 +97,7 @@
 
   .customers__item {
     max-width: 25%;
+    flex-basis: 25%;
 
     &:nth-child(5) {
       margin-top: 58px;
@@ -109,6 +112,7 @@
 
   .customers__item {
     max-width: 33.33%;
+    flex-basis: 33.33%;
 
     &:nth-child(4) {
       margin-top: 58px;
@@ -135,6 +139,7 @@
 
   .customers__item {
     max-width: 100%;
+    flex-basis: 100%;
     padding-left: 0;
     padding-right: 0;
 

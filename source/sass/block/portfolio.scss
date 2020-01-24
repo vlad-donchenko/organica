@@ -20,6 +20,7 @@
   padding-left: 8px;
   padding-right: 8px;
   max-width: 33.33%;
+  flex-basis: 33.33%;
   width: 100%;
 
   &:nth-child(1),
@@ -133,6 +134,7 @@
 @media (max-width: $mobile-vertical) {
   .portfolio__item {
     max-width: 50%;
+    flex-basis: 50%;
 
     &:nth-last-child(3) {
       margin-top: 16px;
@@ -147,6 +149,7 @@
 @media (max-width: $mobile) {
   .portfolio__item {
     max-width: 100%;
+    flex-basis: 100%;
     margin-top: 13px;
 
     &:nth-child(2),
