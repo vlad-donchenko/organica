@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <title>Organica</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<section class="modal modal--open modal--brief" id="modal_call_brief">
+  <div class="modal__content">
+    <button type="button" class="modal_close" aria-label="Закрыть модальное окно"></button>
+    <h2 class="h2 h2--light modal__title">
+      Бриф
+    </h2>
+    <p class="modal__text">
+      Ответьте на несколько вопросов для быстрой
+      <br>
+      обработки вашего запроса
+    </p>
+    <div class="modal__form">
+      <form action="modal_brief.php" method="post">
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Ф.И.О
+            </span>
+            <input type="text" class="form-control__input" name="brief_name" placeholder="Ф.И.О" required>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Номер телефона
+            </span>
+            <input type="tel" class="form-control__input" name="brief_phone" placeholder="Номер телефона" required>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Сфера деятельности
+            </span>
+            <input type="text" class="form-control__input" name="brief_activity" placeholder="Сфера деятельности">
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control" for="service_type">
+            <span class="visually-hidden">
+              Тип услуги
+            </span>
+          </label>
+          <select name="brief_type_service" class="form-control__select custom-select" id="service_type">
+            <option value="service_type" selected>
+              Тип услуги
+            </option>
+            <option value="corporate_identity">
+              Фирменный стиль
+            </option>
+            <option value="logo">
+              Логотип
+            </option>
+            <option value="smm_promotion">
+              SMM продвижение
+            </option>
+            <option value="advertising_video">
+              Рекламное видео
+            </option>
+          </select>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Сфера деятельности
+            </span>
+            <textarea class="form-control__input form-control__input--textarea" name="brief_example_work" placeholder="Примеры работ, которые вам нравятся"></textarea>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <label class="form-control">
+            <span class="visually-hidden">
+              Дополнительное описание
+            </span>
+            <textarea class="form-control__input form-control__input--textarea" name="brief_example_description" placeholder="Дополнительное описание"></textarea>
+          </label>
+        </div>
+        <div class="modal__form-item">
+          <button type="submit" class="button button--black modal__submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -24,6 +24,21 @@
   }
 }
 
+.form-control__select {
+  padding-left: 11px;
+  width: 100%;
+  height: 42px;
+  font-size: 18px;
+  color: $white-color;
+  background-color: $lite-black-color;
+  border-color: transparent;
+
+  &:focus {
+    outline: none;
+    border-color: $green-color;
+  }
+}
+
 .form-control__input--textarea {
   height: 211px;
   padding: 13px 15px;
