@@ -97,7 +97,7 @@
 }
 
 .portfolio__card:focus-within .portfolio__card-info {
-  @include animation(bounce-bottom);
+  opacity: 1;
 }
 
 .portfolio__load-more {
@@ -118,10 +118,6 @@
 
 @media (max-width: $tablet-large) {
   .portfolio__card:hover .portfolio__card-info {
-    animation: none;
-  }
-
-  .portfolio__card:focus-within .portfolio__card-info {
     animation: none;
   }
 

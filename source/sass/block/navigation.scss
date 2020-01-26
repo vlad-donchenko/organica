@@ -176,6 +176,11 @@
       opacity: 0;
     }
   }
+
+  .navigation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: $mobile-vertical) {

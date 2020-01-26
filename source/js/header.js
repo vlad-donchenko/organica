@@ -10,12 +10,10 @@
   var fixedHeaderScrollHandler = function () {
     var headerHeight = header.outerHeight();
 
-    if ($(window).scrollTop() > headerHeight) {
+    if ($(window).scrollTop() > 0) {
       header.addClass('site-header--fixed');
-      main.css('padding-top', headerHeight);
     } else {
       header.removeClass('site-header--fixed');
-      main.css('padding-top', 0);
     }
   };
 
