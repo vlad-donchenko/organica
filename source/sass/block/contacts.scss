@@ -31,7 +31,7 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
-  color: $brown-color;
+  color: $brown-light-color;
 
   &:last-child {
     margin-bottom: 0;
@@ -105,7 +105,7 @@
   margin: 0;
   font-weight: 300;
   font-size: 14px;
-  color: $brown-color;
+  color: $brown-placeholder-color;
 }
 
 .contacts__form-submit {

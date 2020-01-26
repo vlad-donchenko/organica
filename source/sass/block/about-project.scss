@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: $dark-gray-color;
+  color: $brown-dark-gray-color;
   text-decoration: none;
 
   &:hover,
@@ -57,7 +57,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.26em;
-  color: $black-color;
+  color: $lite-black-color;
   background-color: $dark-green-color;
 }
 
@@ -74,7 +74,7 @@
   line-height: 28px;
   font-weight: 400;
   margin: 0;
-  color: $dark-gray-color;
+  color: $brown-dark-gray-another-color;
 
   &::after {
     content: "—";
@@ -107,7 +107,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: $dark-gray-color;
+  color: $dirty-brown-color;
 }
 
 .about-project__details {
@@ -360,6 +360,20 @@
   .about-project__item--problem .about-project__details {
     max-width: 40%;
   }
+
+  .about-project__name {
+    margin-top: 0;
+  }
+
+  .about-project__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-project__arrows {
+    margin-top: 35px;
+    order: 1;
+  }
 }
 
 @media (max-width: $mobile) {
@@ -368,7 +382,7 @@
   }
 
   .about-project__name {
-    margin-top: 35px;
+    margin-top: 0;
   }
 
   .about-project__item {

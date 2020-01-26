@@ -32,9 +32,9 @@
 .lang-switch__item {
   padding-left: 7px;
   padding-right: 7px;
-  margin-top: 8px;
+  margin-bottom: 8px;
 
-  &:first-child {
+  &:last-child {
     margin-top: 0;
   }
 }
@@ -46,11 +46,11 @@
   text-decoration: none;
 
   &[href]:hover {
-    color: $green-color;
+    color: $dark-green-color;
   }
 
   &[href]:focus {
-    color: $green-color;
+    color: $dark-green-color;
   }
 }
 
@@ -58,6 +58,10 @@
   position: absolute;
   right: 7px;
   top: 13px;
+}
+
+.lang-switch__item--active {
+  display: none;
 }
 
 .lang-switch__item--active a {
@@ -72,11 +76,11 @@
   }
 
   .lang-switch:hover .lang-switch__current {
-    color: $green-color;
+    color: $dark-green-color;
   }
 
   .lang-switch:focus-within .lang-switch__current {
-    color: $green-color;
+    color: $dark-green-color;
   }
 
   .lang-switch:hover .lang-switch__current-icon {
@@ -108,11 +112,15 @@
   .lang-switch__item {
     padding: 0;
     margin-right: 20px;
-    margin-top: 0;
+    margin-bottom: 0;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .lang-switch__item--active {
+    display: block;
   }
 
   .lang-switch__current {

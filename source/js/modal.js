@@ -44,7 +44,7 @@
       var formInputs = $(modalName).find('input');
       $(modalName).addClass('modal--open');
 
-      if (formInputs) {
+      if (formInputs && $(window).width() > 1170) {
         $(formInputs[0]).focus();
       } else {
         closeButton.focus();

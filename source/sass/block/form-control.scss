@@ -16,11 +16,11 @@
 
   &:focus {
     outline: none;
-    border-color: $green-color;
+    border-color: $dark-green-color;
   }
 
   &::placeholder {
-    color: $brown-color;
+    color: $brown-placeholder-color;
   }
 }
 
@@ -35,7 +35,7 @@
 
   &:focus {
     outline: none;
-    border-color: $green-color;
+    border-color: $dark-green-color;
   }
 }
 

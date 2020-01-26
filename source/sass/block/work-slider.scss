@@ -5,10 +5,16 @@
 
 .work-slider__item {
   position: relative;
+  display: block;
   min-height: 525px;
   padding-top: 336px;
   padding-bottom: 119px;
+  text-decoration: none;
   z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .work-slider__image {
@@ -22,6 +28,7 @@
 }
 
 .work-slider__title {
+  position: relative;
   margin: 0;
   max-width: 390px;
   font-size: 36px;

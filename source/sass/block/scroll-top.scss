@@ -1,0 +1,49 @@
+.scroll-top {
+  position: fixed;
+  right: 52px;
+  bottom: 100px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid $dark-green-color;
+  border-radius: 50%;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $dark-gray-color;
+  }
+}
+
+.scroll-top--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top__icon {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #3cc3ae;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: $tablet-large) {
+  .scroll-top {
+    right: 20px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .scroll-top {
+    bottom: 30px;
+  }
+}

@@ -25,11 +25,11 @@
   text-decoration: none;
 
   &[href]:hover {
-    color: $green-color;
+    color: $dark-green-color;
   }
 
   &[href]:focus {
-    color: $green-color;
+    color: $dark-green-color;
   }
 }
 
@@ -42,7 +42,7 @@
     width: calc(100% - 40px);
     display: block;
     height: 1px;
-    background-color: $green-color;
+    background-color: $dark-green-color;
     transform: translateX(-50%);
   }
 }

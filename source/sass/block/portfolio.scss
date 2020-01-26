@@ -93,11 +93,11 @@
 }
 
 .portfolio__card:hover .portfolio__card-info {
-  @include animation(bounce-left);
+  @include animation(bounce-bottom);
 }
 
 .portfolio__card:focus-within .portfolio__card-info {
-  @include animation(bounce-left);
+  @include animation(bounce-bottom);
 }
 
 .portfolio__load-more {

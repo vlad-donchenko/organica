@@ -6,7 +6,7 @@
   line-height: 19px;
   text-decoration: none;
   color: $white-color;
-  border: 1px solid $green-color;
+  border: 1px solid $dark-green-color;
 
   &:focus {
     outline: none;
@@ -18,7 +18,7 @@
 
   &:hover,
   &:focus {
-    color: $green-color;
+    color: $dark-green-color;
     border-color: $dark-gray-color;
   }
 }
@@ -26,9 +26,9 @@
 .button--green {
   font-size: 14px;
   padding: 10.5px 52px;
-  background-color: $green-color;
-  color: $black-color;
-  border-color: $green-color;
+  background-color: $dark-green-color;
+  color: $lite-black-color;
+  border-color: $dark-green-color;
 
   &:hover,
   &:focus {

@@ -24,7 +24,7 @@
       prevArrow: $('.reviews__arrow--prev'),
       nextArrow: $('.reviews__arrow--next'),
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1170,
@@ -38,7 +38,6 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            adaptiveHeight: true
           }
         }
       ]
