@@ -3,13 +3,10 @@
 (function () {
   var body = $('body');
   var header = $('.site-header');
-  var main = $('main');
   var navigation = $('.navigation ');
   var languageSwitcher = $('.lang-switch');
 
   var fixedHeaderScrollHandler = function () {
-    var headerHeight = header.outerHeight();
-
     if ($(window).scrollTop() > 0) {
       header.addClass('site-header--fixed');
     } else {
